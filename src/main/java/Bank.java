@@ -29,6 +29,7 @@ public class Bank {
         /*
          * Implement this function
          */
+        return bankAccount.getAccountBalance() - amount > 0;
     }
 
     /**
@@ -45,6 +46,10 @@ public class Bank {
         /*
          * Implement this function
          */
+        if (amount < 0) {
+            return false;
+        }
+        return true;
     }
 
     /**
