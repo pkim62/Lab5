@@ -69,6 +69,7 @@ public class Bank {
         /*
          * Implement this function
          */
+        return withdrawMoney(source, amount) && depositMoney(destination, amount);
     }
 
     /**
@@ -82,6 +83,7 @@ public class Bank {
         /*
          * Implement this function
          */
+        bankAccount.setOwnerName(name);
     }
 
     public static int totalAccounts = 0;
@@ -94,6 +96,7 @@ public class Bank {
         /*
          * Implement this function
          */
+        return BankAccount.getNumberOfAccounts();
     }
 
     /**

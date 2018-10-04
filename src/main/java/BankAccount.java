@@ -29,6 +29,11 @@ public class BankAccount {
          */
         WORKPLACE
     }
+
+    /**
+     * number of accs
+     */
+    private static int numberOfAccounts;
     /**
      * You may want to use this to distinguish between different kinds of accounts#s.
      */
@@ -63,6 +68,7 @@ public class BankAccount {
         /*
          * Implement this function
          */
+        numberOfAccounts++;
         accountType = accountCategory;
         ownerName = name;
     }
@@ -128,5 +134,13 @@ public class BankAccount {
      */
     public void setInterestEarned(final double ie) {
         interestEarned = ie;
+    }
+
+    /**
+     * number of accs.
+     * @return number of accs.
+     */
+    public static int getNumberOfAccounts() {
+        return numberOfAccounts;
     }
 }
