@@ -129,6 +129,6 @@ public class Bank {
 
         // Print number of accounts
         System.out.print("Number of active accounts at " + bank.bankName + " are ");
-        System.out.println(Bank.totalAccounts);
+        System.out.println(Bank.getNumberOfAccount());
     }
 }
